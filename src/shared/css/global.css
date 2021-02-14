@@ -1,9 +1,3 @@
-/* Flex styles -------------------------------------------------*/
-header {
-  display: flex;
-  align-items: center;
-}
-
 @media (min-width: 700px) {
   .leading {
     display: flex;
@@ -11,16 +5,17 @@ header {
   }
 }
 
-/* Generic styles ----------------------------------------------*/
 body {
   font-family: "Quicksand", sans-serif;
 }
 
 header {
+  display: flex;
+  align-items: center;
   padding: 10px;
   font-size: 2em;
   color: white;
-  background-color: #333;
+  background-color: rgb(92 98 133 / 50%);
 }
 
 .logo {
@@ -100,13 +95,10 @@ article {
 }
 
 .topnav {
-  overflow: hidden;
   background-color: transparent;
-  float: right;
 }
 
 .topnav a {
-  float: right;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -122,6 +114,20 @@ article {
   background-color: transparent;
   color: white;
 }
+.profile {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  float: right;
+}
+.img-profile {
+  width: 15px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
 .btn {
   display: inline-block;
   background: #000;
@@ -210,7 +216,17 @@ article {
   color: white;
   text-align: center;
 }
-.img-profile {
-  width: 15px;
+
+.logout {
+  float: right;
+}
+
+.basketcard {
+  float: right;
+  margin-top: -86px;
+}
+.basketcard-img {
+  width: 30px;
   margin-right: 5px;
+  color: white;
 }

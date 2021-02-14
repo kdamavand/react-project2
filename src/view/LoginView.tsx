@@ -36,7 +36,9 @@ export const LoginView = () => {
         <div className="form-control">
           <label>password:</label>
           <input
-            type="password"
+            type="text"
+            name="password"
+            required
             onChange={(event) =>
               setLoginCredentials({
                 ...loginCredentials,

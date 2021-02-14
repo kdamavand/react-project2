@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Routes } from "./routes/Routes";
 import { Header } from "./components/Header";
 import { UserProvider } from "./shared/provider/UserProvider";
