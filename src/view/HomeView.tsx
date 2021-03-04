@@ -14,8 +14,10 @@ export type CartItemType = {
   amount: number;
 };
 
+//export const GetProducts = async (): Promise<CartItemType[]> =>
+//  await (await fetch("https://fakestoreapi.com/products")).json();
 export const GetProducts = async (): Promise<CartItemType[]> =>
-  await (await fetch("https://fakestoreapi.com/products")).json();
+  await (await fetch("http://localhost:8080/api/stores")).json();
 
 export const HomeView = () => {
   const { data } = useQuery<CartItemType[]>("products", GetProducts);
